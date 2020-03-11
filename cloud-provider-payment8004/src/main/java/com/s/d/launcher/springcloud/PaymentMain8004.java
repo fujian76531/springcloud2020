@@ -3,18 +3,16 @@ package com.s.d.launcher.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author ：launcher
- * @date ：Created in 2020/3/9
+ * @date ：Created in 2020/3/11
  * @description：
  */
 @SpringBootApplication
-@EnableEurekaClient
-@EnableDiscoveryClient
-public class PaymentMain8001 {
+@EnableDiscoveryClient//改注解用于向使用consul或者zookeeper作为注册中心时注册服务
+public class PaymentMain8004 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class, args);
+        SpringApplication.run(PaymentMain8004.class, args);
     }
 }
