@@ -23,7 +23,7 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    public static final String PAYMENT_URL ="http://localhost:8001";
+    public static final String PAYMENT_URL ="http://CLOUD-PROVIDER-PAYMENT-SERVICE";
 
     @GetMapping("/consumer/create")
     public CommonResult<Payment> create(Payment payment){
